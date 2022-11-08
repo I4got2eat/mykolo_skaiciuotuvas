@@ -1,0 +1,59 @@
+body{
+    background-color: gray;
+}
+
+
+td{
+    background-color: white;
+
+}
+
+h1{
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    padding-top: 300px; ;
+ 
+    margin-bottom: 100px
+}
+
+button{
+    text-align: center;
+    font-weight: bold;
+    padding: 30px;
+    font-size: large;
+}
+
+table, td{
+    border: 2px solid black;
+    text-align: center;
+ 
+    
+}
+
+table{
+    display: inline-block;
+}
+
+button:hover{
+    background-color: darkgray;
+}
+
+.inputs{
+    padding-top: 20px;
+    text-align: center;
+    background-color: gray;
+    margin-top: 20px;
+    margin-left: 400px;
+    margin-right: 400px;
+    min-height: 400px;
+   
+}
+
+
+.Display{
+    height: 100px;
+    background-color: lightgrey;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 60px;
+}
