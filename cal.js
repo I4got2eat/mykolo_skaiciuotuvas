@@ -19,14 +19,29 @@ var six = document.getElementById('6');
 var seven = document.getElementById('7');
 var eight = document.getElementById('8');
 var nine = document.getElementById('9');
-let rezultatas = '8+2';
+var rezas = document.getElementById('rezult')
+var lpar  = document.getElementById('(');
+var rpar = document.getElementById(')');
+var dot = document.getElementById('.');
 
+    rezas.onclick = function(){
+        x=display.textContent;
+        let i = 0;
+        let ats = '';
+        let fin;
+        while(i<x.length){
+            ats+=x[i];
+            i++;
+            
+        }
 
+        display.innerText  += '=' + eval(ats);
 
+    }
 
     reset.onclick = function(){
     display.innerText = '';
-    }
+    };
 
     minus.onclick = function(){
     display.innerText += '-';
@@ -48,12 +63,23 @@ let rezultatas = '8+2';
     display.innerText += '%';
    };
    
-   rez.onclick = function(){
-    lopas.innerText = parseInt(rezultatas);
-   };
+
+
+
+
+
+   dot.onclick = function(){
+    display.innerText+= '.';
+   }
    
+   lpar.onclick = function(){
+    display.innerText +='('
+}   
 
 
+    rpar.onclick = function(){
+        display.innerText +=')'
+    }   
 
    zero.onclick = function(){
     display.innerText += '0';
@@ -94,4 +120,5 @@ let rezultatas = '8+2';
    nine.onclick = function(){
     display.innerText += '9';
    };
+   
    

@@ -10,16 +10,16 @@
 
 <body>
 
-    <h1> Mykolo <span style="text-decoration:underline">neveikiantis</span> skaicuotuvas</span></h1>
+    <h1> Mykolo <span style="text-decoration:underline">veikiantis</span> skaicuotuvas</span></h1>
     <div class="inputs">
         
-        
+        <div id="lopas" style="background-color:whit; font-size: 70px; margin-right: 0px; padding-right: 0px;"></div> 
     <table> 
         
 
         <tr>
 
-            <td colspan="4" ><div class="Display" id="Display"></div></td>
+            <td colspan="5" ><div class="Display" id="Display"></div></td>
         </tr>
 
         <tr>
@@ -27,6 +27,7 @@
             <td><button type="button" id = "multiplication">*</button></td>
             <td><button type="button" id = "division">/</button></td>
             <td><button type="button" id = "remainder">%</button></td>
+            <td><button type="button" id = "." value="." style="width: 75px;">.</button></td>
         </tr>
 
 
@@ -35,29 +36,32 @@
             <td><button type="button" id = "7">7</button></td>
             <td><button type="button" id = "8">8</button></td>
             <td><button type="button" id = "9">9</button></td>
+            <td><button type="button" id = "(">(</button></td>
         </tr>
 
         <tr>
-            <td><button type="button" id = "3">3</button></td>
+            <td><button type="button" id = "3" value="3">3</button></td>
             <td><button type="button" id = "4">4</button></td>
-            <td><button type="button" id = "5">5</button></td>
-            <td><button type="button" id="plus">+</button></td>
+            <td><button type="button" id = "5" value="5">5</button></td>
+            <td><button type="button" id="plus" value="+">+</button></td>
+            <td><button type="button" id = ")" value=")" style="width: 75px;">)</button></td>
         </tr>
 
         <tr>
             <td><button type="button" id = "0">0</button></td>
             <td><button type="button" id = "1">1</button></td>
             <td><button type="button" id = "2">2</button></td>
-            <td><button type="button" id = "rezult">=</button></td>
+            <td colspan="2"><button type="button" id = "rezult" style="width: 158px;">=</button></td>
+            
         </tr>
 
     </table>
     <br/>
-    <button style="width: 339px; border: 3px solid black;" id="reset">RESET</button>
+    <button style="width: 417px; border: 3px solid black;" id="reset">RESET</button>
     
     </div>
     
-    <div id="lopas" style="background-color:white; text-align: center;"></div>
+    
 
 
     <script src="cal.js"></script>
